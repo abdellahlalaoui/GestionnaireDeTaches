@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Aligne le texte et le bouton */
+    align-items: center; /* Centre verticalement */
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#taskList li button {
+    background-color: #dc3545; /* Rouge */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
